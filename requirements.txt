@@ -1,0 +1,19 @@
+# SAM-3D Body Pipeline (This repo) dependencies
+# Install with: pip install -r requirements.txt
+
+# Core scientific stack
+numpy==1.26.4
+scipy
+pandas
+
+# Visualization
+plotly
+matplotlib
+opencv-python
+
+# Hugging Face
+huggingface_hub
+
+# Environment
+python-dotenv
+

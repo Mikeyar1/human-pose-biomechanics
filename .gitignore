@@ -1,0 +1,36 @@
+# ── Secrets ──
+.env
+
+# ── SAM3D upstream repos (cloned at runtime) ──
+sam-3d-body/
+sam3/
+
+# ── Model checkpoints (large binary files) ──
+checkpoints/
+
+# ── Data files (input images and outputs) ──
+data/input/
+data/output/
+*.pkl
+
+# ── Large generated outputs ──
+# joint_analysis.html is checked in as a demo — exclude large ones from data/
+data/**/*.html
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+env/
+
+# ── Jupyter ──
+.ipynb_checkpoints/
+
+# ── OS ──
+.DS_Store
+Thumbs.db
