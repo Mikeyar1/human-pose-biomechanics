@@ -8,10 +8,9 @@ Biomechanical analysis pipeline for human performance assessment using Meta's SA
 
 The pipeline takes an image of a person, runs it through SAM 3DB to estimate a full 3D pose, and produces an interactive two-panel visualization that displays the joint angles and relative orientation of each joint. Example below:
 
-<img src="./data/input/fig3.png" alt="Joint Analysis Visualization" width="900">
+<img src="./assets/demo_input.png" alt="Input image" width="900">
 <br>
-<img src="./data/output/fig3.png" alt="Joint Analysis Visualization" width="900">
-VV
+<img src="./assets/demo_output.png" alt="Joint analysis visualization" width="900">
 **Interactive visualization:** Download [joint_analysis.html](joint_analysis.html?raw=true) and open it in your browser to explore the 3D skeleton with hover data.
 
 **Left panel — Joint angles:** Shows how bent each joint is using a position-based dot-product method. Color encodes flexion on a blue-to-red gradient (blue = straight, red = bent). The angle in degrees is labeled at each joint.
@@ -46,5 +45,5 @@ If you are running this in a different IDE or environment and something breaks, 
 
 ## Documentation
 
-- `SAM3DB_research.md` — Technical reference guide covering the MHR skeleton structure, output tensors, joint index table, coordinate systems, and camera configuration
-- `SAM3DB_Technical_Brief.docx` — Summary brief for technical stakeholders covering the analysis methodology and what changed from rotation-based to position-based computation
+- [`markdowns/SAM3DB_Technical_Guide.md`](markdowns/SAM3DB_Technical_Guide.md) — Technical reference guide covering the MHR skeleton structure, output tensors, joint index table, coordinate systems, and camera configuration
+- [`SAM3DB_Official_README.md`](SAM3DB_Official_README.md) — Original Meta README for SAM 3D Body — model architecture, benchmarks, and citation
